@@ -1,0 +1,86 @@
+.privat-policy {
+    padding: 85px 0;
+    background-color: #F2F2F2;
+    h2 {
+        font-size: 52px;
+        line-height: 61px;
+        text-align: center;
+        color: #029DC4;
+        margin-bottom: 10px;
+    }
+    .date {
+        display: block;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #5E666A;
+    }
+}
+
+.privat-policy-info {
+    padding-top: 67px;
+    padding-bottom: 123px;
+    .row {
+        max-width: 845px;
+        margin: 0 auto;
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #5E666A;
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            line-height: 42px;
+            color: #5E666A;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #5E666A;
+            margin-bottom: 15px;
+            text-transform: none;
+        }
+        .in-short {
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 22px;
+            color: #5E666A;
+            margin-bottom: 62px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 75px;
+            li {
+                font-size: 16px;
+                line-height: 22px;
+                color: #5E666A;
+                span {
+                    font-weight: 700;
+                    padding-left: 20px;
+                    display: inline-block;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        left: 5px;
+                        border-radius: 50%;
+                        background-color: #5E666A;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #00256B;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.search {
+    padding-top: 75px;
+    padding-bottom: 103px;
+
+    h2 {
+        max-width: 680px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #5E666A;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .wrap-searc {
+        .searchbar-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 5px;
+            margin-bottom: 85px;
+            border-bottom: 1px solid #979797;
+
+            .search-menu {
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                li {
+                    margin-right: 52px;
+
+                    a {
+                        text-decoration: none;
+                        color: #5E666A;
+                        font-size: 20px;
+                        line-height: 33px;
+                    }
+
+                }
+
+                li.active a {
+                    color: #029DC4;
+                    transition: 0.4s;
+                }
+            }
+
+            .wrap-search {
+                input {
+                    padding: 6px 0 6px 18px;
+                    font-size: 14px;
+                    line-height: 27px;
+                    color: #5E666A;
+                    outline: none;
+                    background-image: url(../img/svg/search.svg);
+                    background-repeat: no-repeat;
+                    background-position: center right 12px;
+                    background-color: #FFFFFF;
+                    border: 1px solid rgba(178, 185, 188, 0.6);
+                    border-radius: 4px;
+                    width: 257px;
+
+
+                    &::-webkit-search-cancel-button {
+                        display: none;
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+
+            .search-mobile {
+                display: none;
+            }
+        }
+
+        .result {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            .wrap-post {
+                width: calc(50% - (125px / 2));
+                margin-right: 125px;
+                margin-bottom: 135px;
+
+                a.wrap-img {
+                    display: block;
+                    margin-bottom: 25px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+
+                a.title-post {
+                    font-family: 'RobotoCondensed';
+                    font-size: 28px;
+                    line-height: 49px;
+                    color: #00226D;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #5E666A;
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #5E666A;
+                }
+            }
+        }
+    }
+}
+
+.go-calculator {
+    padding: 160px 0;
+
+    .row {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/svg/go-calc.svg);
+            background-repeat: no-repeat;
+            width: 405px;
+            height: 380px;
+            right: 85px;
+            bottom: -120px;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 49px;
+            color: #029DC4;
+            margin-bottom: 25px;
+            max-width: 610px;
+
+            span {
+                font-size: 56px;
+                font-weight: 700;
+            }
+        }
+
+        a {
+            padding: 15px 27px 15px 20px;
+            display: block;
+            width: fit-content;
+
+            &:hover img {
+                transform: translateX(7px);
+            }
+
+            img {
+                margin-left: 10px;
+                transition: 0.4s;
+            }
+
+            .calc-text-mob {
+                display: none;
+            }
+
+        }
+    }
+}

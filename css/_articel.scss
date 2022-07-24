@@ -1,0 +1,198 @@
+.article {
+    padding-top: 120px;
+
+    h2 {
+        text-align: center;
+        font-size: 52px;
+        line-height: 61px;
+        text-align: center;
+        color: #029DC4;
+        margin-bottom: 10px;
+    }
+
+    .date {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #5E666A;
+        margin-bottom: 57px;
+        display: block;
+    }
+
+    .wrap-img {
+        width: 100%;
+        margin-bottom: 90px;
+
+        .full-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+    }
+}
+
+.article-info {
+    display: flex;
+    align-items: flex-start;
+
+    .sub-title {
+        margin-bottom: 68px;
+        font-size: 24px;
+        line-height: 33px;
+        color: #5E666A;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 33px;
+        color: #00226D;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #5E666A;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 35px;
+
+        li {
+            font-size: 20px;
+            line-height: 28px;
+            color: #5E666A;
+        }
+    }
+
+    .pros {
+        margin-bottom: 35px;
+    }
+
+    .cons {
+        margin-bottom: 90px;
+    }
+
+    .wrap-img {
+        margin-top: 35px;
+        margin-bottom: 45px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+    }
+
+    .container-sticky {
+        display: flex;
+        align-items: flex-start;
+        .sticky-menu {
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 10px;
+            ul {
+                padding: 0;
+                list-style: none;
+
+                li {
+                    margin: 0;
+                    margin-bottom: 18px;
+                    width: fit-content;
+
+                    a {
+                        display: block;
+                        width: fit-content;
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        border: 0.6px solid #5E666A;
+                        border-radius: 50%;
+                        transition: 0.4s;
+
+                        // &:hover path {
+                        //             color: red;
+                        // }
+                    }
+
+                    a{
+                        svg path {
+                            fill: #5E666A;
+                            transition: 0.4s;
+                        }
+                    }
+
+                    &:hover a {
+                        background-color: #D8D8D8;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.learn-more.page-learn  {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    .wrap-learn-more {
+        background-color: #FFFFFF;
+        padding-top: 46px;
+        padding-bottom: 41px;
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/png/article-bg-left.png);
+            background-repeat: no-repeat;
+            width: 1286px;
+            height: 400px;
+            z-index: -1;
+            top: -73px;
+            left: -500px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/png/article-bg-right.png);
+            background-repeat: no-repeat;
+            width: 1030px;
+            height: 300px;
+            z-index: -1;
+            top: 0px;
+            right: -350px;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #029DC4;
+            margin-bottom: 30px;
+        }
+        a {
+            padding: 13px 0;
+            display: block;
+            width: 184px;
+            margin: 0 auto;
+        }
+    }
+
+}

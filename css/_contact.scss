@@ -1,0 +1,161 @@
+section.wrap-form {
+    background-repeat: no-repeat;
+    background-position: right 276px top 140px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    .row {
+        max-width: 540px;
+        text-align: center;
+        margin: 0 auto;
+
+        h2 {
+            color: #029DC4;
+            font-size: 52px;
+            line-height: 61px;
+            margin-bottom: 10px;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            line-height: 24px;
+            color: #5E666A;
+            margin-bottom: 30px;
+
+            a {
+                color: #00256B;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .wrap-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        form {
+            max-width: 400px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 35px;
+
+            &>div {
+                margin-bottom: 22px;
+            }
+
+            div {
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5E666A;
+                    margin-bottom: 5px;
+                }
+
+                label {
+                    display: block;
+
+                    input {
+                        background-color: #FFFFFF;
+                        border: 1px solid rgba(70%, 73%, 74%, 0.5);
+                        border-radius: 4px;
+                        height: 36px;
+                        width: 100%;
+                        outline: none;
+                        padding-left: 5px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #5E666A;
+                    }
+                    input.have-bg {
+                        padding-left: 30px;
+                    }
+
+                }
+            }
+
+            .wrap-first-inputs {
+                display: flex;
+                justify-content: space-between;
+
+                .wrap-input-first-name {
+                    width: 43%;
+
+                    .input-name {
+                        background-image: url(../img/svg/first-name-input.svg);
+                        background-repeat: no-repeat;
+                        background-position: 8px center;
+                    }
+                }
+
+                .wrap-input-last-name {
+                    width: calc(100% - 43% - 10px);
+                }
+            }
+            .wrap-email {
+                .input-email {
+                    background-image: url(../img/svg/email-input.svg);
+                    background-repeat: no-repeat;
+                    background-position: 8px center;
+                }
+            }
+            .wrap-company {
+                .input-company {
+                    background-image: url(../img/svg/company-input.svg);
+                    background-repeat: no-repeat;
+                    background-position: 8px center;
+                }
+            }
+            .wrap-textarea {
+                textarea {
+                    width: 100%;
+                    background-color: #FFFFFF;
+                    border: 1px solid rgba(70%, 73%, 74%, 0.5);
+                    border-radius: 4px;
+                    outline: none;
+                    resize: none;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5E666A;
+                    padding: 5px;
+                    height: 70px;
+                }
+            }
+            .wrap-ckeckbox {
+                display: flex;
+                align-items: flex-start;
+            }
+            .form-btn {
+                max-width: 270px;
+                padding: 13.5px 0;
+                cursor: pointer;
+                border: none;
+            }
+        }
+        .wrap-img {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 950px;
+                height: 700px;
+                background-repeat: no-repeat;
+                background-image: url(../img/png/contact-bg.png);
+                left: 0;
+                top: -230px;
+                z-index: -1;
+            }
+        }
+    }
+    .wrap-privat-policy {
+        font-size: 16px;
+        line-height: 17px;
+        color: #5E666A;
+        a {
+            color: #00256B;
+        }
+    }
+}
